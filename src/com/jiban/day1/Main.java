@@ -13,7 +13,8 @@ public class Main {
             System.out.println("2. View Student");
             System.out.println("3. Search Student");
             System.out.println("4. Delete Student");
-            System.out.println("5. Exit");
+            System.out.println("5. Sort Students");
+            System.out.println("6. Exit");
             System.out.println("Enter Choice: ");
 
             int ch = sc.nextInt();
@@ -22,7 +23,8 @@ public class Main {
                 case 2 -> service.viewStudents();
                 case 3 -> service.searchStudent();
                 case 4 -> service.deleteStudent();
-                case 5 -> {
+                case 5 -> service.sortStudents();
+                case 6 -> {
                     System.out.println("Exiting!!!! Good Bye.");
                     System.exit(0);
                 }
